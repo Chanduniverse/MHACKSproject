@@ -18,15 +18,15 @@ function login(){
 
 
 function signup(){
-  var Signfirst = document.getElementById("signupFNAME").value;
+    var Signfirst = document.getElementById("signupFNAME").value;
     var Signlast = document.getElementById("signupLNAME").value;
     var Signemail = document.getElementById("signupEmail").value;
-    var Signpassword = document.getElementById("SignupPass").value;
-if (Signfirst = "" || Signlast = "" || Signemail = "" || Signpassword = ""){
-  document.getElementById("fillout").innerHTML = "Please fill out all the fields."
+    var Signpassword = document.getElementById("signupPass").value;
+if (Signfirst == "" || Signlast == "" || Signemail == "" || Signpassword == ""){
+  document.getElementById("fillout").innerHTML = "Please fill out all the fields.";
 }
 
 else {
-  return
+  console.log(Signfirst);
 }
 }
