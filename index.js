@@ -22,5 +22,11 @@ function signup(){
     var Signlast = document.getElementById("signupLNAME").value;
     var Signemail = document.getElementById("signupEmail").value;
     var Signpassword = document.getElementById("SignupPass").value;
+if (Signfirst = "" || Signlast = "" || Signemail = "" || Signpassword = ""){
+  document.getElementById("fillout").innerHTML = "Please fill out all the fields."
+}
 
+else {
+  return
+}
 }
