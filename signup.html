@@ -25,36 +25,45 @@
 <br>
 <br>
 <center>
-<h1>Login:</h1>
+<h1>Sign up:</h1>
 </center>
 <br>
+
 
  <div class="col-md-6 offset-md-3">
   <div class="card">
 
     <div class="card-body">
       <form>
+        <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">First and last name</span>
+    </div>
+    <input type="text" id="signupFNAME" aria-label="First name" class="form-control">
+    <input type="text" id="signupLNAME" aria-label="Last name" class="form-control">
+  </div>
 
+  <br>
+  <br>
 
         <div class="form-group">
 
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp" placeholder="Enter email">
-
+          <input type="email" class="form-control" id="signupEmail" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <br>
         <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="loginPass" placeholder="Password">
+          <label for="SignupPass">Password</label>
+          <input type="password" class="form-control" id="signupPass" placeholder="Password">
         </div>
 
 
-        <button type="submit" onclick="login()" class="btn btn-primary">Login</button>
+        <button type="submit" onclick="signup()" class="btn btn-primary">Submit</button>
       </form>
       <br>
-
-        New? Sign up <a href="signup.html">here</a>.
+Already have a account? Login <a href="index.html">here</a>.
 </div>
     </div>
   </div>
